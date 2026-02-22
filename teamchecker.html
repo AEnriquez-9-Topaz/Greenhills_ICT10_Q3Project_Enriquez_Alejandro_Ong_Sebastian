@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intramurals Eligibility Checker</title>
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <h1>🏆 INTRAMURALS ELIGIBILITY CHECKER 🏆</h1>
+    
+    <div class="nav-bar">
+        <a href="index.html" class="nav-btn">HOME</a>
+        <a href="signup.html" class="nav-btn">SIGN UP</a>
+        <a href="players.html" class="nav-btn">PLAYERS LIST</a>
+    </div>
+    
+    <div class="container">
+        <div class="instructions">
+            <h3>INSTRUCTIONS:</h3>
+            <p>Fill in all the fields below to check your eligibility and get your team assignment!</p>
+        </div>
+        
+        <div class="form-group">
+            <label for="onlineReg">ONLINE REGISTRATION STATUS:</label>
+            <select id="onlineReg">
+                <option value="" selected disabled>Select an option</option>
+                <option value="yes">Yes, I am registered online</option>
+                <option value="no">No, I am not registered online</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="medicalClearance">MEDICAL CLEARANCE STATUS:</label>
+            <select id="medicalClearance">
+                <option value="" selected disabled>Select an option</option>
+                <option value="yes">Yes, I have medical clearance</option>
+                <option value="no">No, I don't have medical clearance</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="gradeLevel">GRADE LEVEL:</label>
+            <select id="gradeLevel">
+                <option value="" selected disabled>Select your grade level</option>
+                <option value="7">Grade 7</option>
+                <option value="8">Grade 8</option>
+                <option value="9">Grade 9</option>
+                <option value="10">Grade 10</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="section">SECTION (OPTIONAL):</label>
+            <input type="text" id="section" placeholder="Topaz, Emerald, Ruby, and Sapphire">
+        </div>
+        
+        <button id="checkBtn" type="button" py-click="check_eligibility">CHECK ELIGIBILITY</button>
+        <button id="resetBtn" type="button" py-click="reset_form">RESET FORM</button>
+    </div>
+    
+    <div class="container">
+        <div id="output"></div>
+        <div class="team-images" id="teamImages">
+            <img src="blue_bears.jpg.jpg" alt="Blue Bears" title="Blue Bears">
+            <img src="red_bulldogs.jpg.jpg" alt="Red Bulldogs" title="Red Bulldogs">
+            <img src="yellow_tigers.jpg.jpg" alt="Yellow Tigers" title="Yellow Tigers">
+            <img src="green_hornets.jpg.jpg" alt="Green Hornets" title="Green Hornets">
+        </div>
+    </div>
+    
+    <footer>
+        <p>GREENHILLS ICT10 - Q3 SEATWORK #2 | INTRAMURALS ELIGIBILITY SYSTEM (ONG and ENRIQUEZ)</p>
+    </footer>
+
+    <script type="py" src="main.py"></script>
+</body>
+</html>

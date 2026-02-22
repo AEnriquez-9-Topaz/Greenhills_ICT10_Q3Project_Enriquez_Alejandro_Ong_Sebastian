@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Intramurals 2025</title>
+    
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>📝 INTRAMURALS 2025 SIGN UP PAGE</h1>
+    
+    <div class="container">
+        <div class="nav-bar">
+            <a href="index.html" class="nav-btn">HOME</a>
+            <a href="teamchecker.html" class="nav-btn">TEAM CHECKER</a>
+            <a href="players.html" class="nav-btn">PLAYERS LIST</a>
+        </div>
+        
+        <div class="form-group">
+            <label for="fullname">FULL NAME:</label>
+            <input type="text" id="fullname" placeholder="Enter your full name">
+            <div class="password-requirements">Must be at least 7 characters long!</div>
+        </div>
+        
+        <div class="form-group">
+            <label for="grade">GRADE LEVEL:</label>
+            <select id="grade">
+                <option value="" selected disabled>Select grade level</option>
+                <option value="7">Grade 7</option>
+                <option value="8">Grade 8</option>
+                <option value="9">Grade 9</option>
+                <option value="10">Grade 10</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="section">SECTION:</label>
+            <select id="section">
+                <option value="" selected disabled>Select section</option>
+                <option value="Topaz">Topaz</option>
+                <option value="Emerald">Emerald</option>
+                <option value="Ruby">Ruby</option>
+                <option value="Sapphire">Sapphire</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="email">EMAIL ADDRESS:</label>
+            <input type="email" id="email" placeholder="student@obmc.edu.ph">
+        </div>
+        
+        <div class="form-group">
+            <label for="password">PASSWORD:</label>
+            <input type="password" id="password" placeholder="Create a password">
+            <div class="password-requirements">Must be at least 10 characters long!</div>
+        </div>
+        
+        <div class="form-group">
+            <label for="confirm_password">CONFIRM PASSWORD:</label>
+            <input type="password" id="confirm_password" placeholder="Re-enter password">
+        </div>
+        
+        <button id="signupBtn" type="button" py-click="sign_up">CREATE ACCOUNT</button>
+        <button id="resetBtn" type="button" py-click="reset_form">CLEAR FORM</button>
+    </div>
+    
+    <div class="container">
+        <div id="output"></div>
+    </div>
+    
+    <footer>
+        <p>GREENHILLS ICT10 - Q3 PROJECT | SIGN UP PAGE (ONG AND ENRIQUEZ)</p>
+    </footer>
+
+    <script type="py" src="signup.py"></script>
+</body>
+</html>

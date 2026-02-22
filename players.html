@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of Players - Intramurals 2025</title>
+    
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>INTRAMURALS 2025 · PLAYERS REGISTRY</h1>
+    
+    <div class="nav-bar">
+        <a href="index.html" class="nav-btn">HOME</a>
+        <a href="signup.html" class="nav-btn">SIGN UP</a>
+        <a href="teamchecker.html" class="nav-btn">TEAM CHECKER</a>
+    </div>
+    
+    <div class="container">
+        <div class="btn-container">
+            <button class="action-btn" py-click="display_players">REFRESH</button>
+        </div>
+        
+        <div class="subtitle">
+            registered participants
+        </div>
+        
+        <div class="stats" id="stats"></div>
+        
+        <div class="players-list" id="playersList"></div>
+        
+        <p style="text-align: center; color: #666666; margin-top: 15px; font-family: 'Times New Roman', Times, serif; font-size: 14px; font-style: italic;">
+            23 players · intramurals 2025
+        </p>
+    </div>
+    
+    <footer>
+        <p>greenhills ict10 · q3 project · list of players (ong and enriquez)</p>
+    </footer>
+
+    <script type="py" src="players.py"></script>
+</body>
+</html>
