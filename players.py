@@ -4,7 +4,6 @@ def display_players(event=None):
     # Clear the players list and stats
     document.getElementById("playersList").innerHTML = ""
     
-    #used ai TO ARRANGE since i dont want to arrange it alphabetically manually 
     classmates = [
         "Alejandro Enriquez",
         "Allen Daradal",
@@ -31,7 +30,7 @@ def display_players(event=None):
         "Skyler Escobar"
     ]
     
-    #nevermind found this fire ahh variable is just a list of names, and we can use the sort() method to arrange it alphabetically without doing it manually.
+    #Sort names 
     classmates.sort()
     
     #to display each classmate, we can use a for loop to iterate through the list and create a card for each classmate.
@@ -79,5 +78,6 @@ def display_numbers(e):
 
     for subject in subjects:
         display(f'- {subject}')
+
 
 '''
